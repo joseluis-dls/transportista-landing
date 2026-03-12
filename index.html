@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orduña Transportes — Carga General y Flete</title>
+  <meta name="description" content="Orduña Transportes. Movemos tu carga con puntualidad, seguridad y compromiso." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav__logo">ORDUÑA <span>TRANSPORTES</span></a>
+    <button class="nav__toggle" id="navToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#contacto" class="nav__cta">Cotizar</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <!-- Reemplaza con: <img src="assets/images/hero.jpg" alt="Flota Orduña Transportes" /> -->
+      <div class="hero__bg-placeholder"></div>
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Carga general · Flete · Logística</p>
+      <h1 class="hero__title">
+        Tu carga.<br />
+        <em>Nuestro compromiso.</em>
+      </h1>
+      <p class="hero__sub">
+        Más de una década moviendo México con puntualidad,<br class="hide-mobile" />
+        seguridad y el respaldo de Orduña Transportes.
+      </p>
+      <div class="hero__actions">
+        <a href="#servicios" class="btn btn--primary">Ver servicios</a>
+        <a href="#contacto" class="btn btn--ghost">Solicitar cotización</a>
+      </div>
+    </div>
+    <a href="#nosotros" class="hero__scroll" aria-label="Scroll">
+      <span class="hero__scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       NOSOTROS
+  ═══════════════════════════════════════════ -->
+  <section class="nosotros" id="nosotros">
+    <div class="container">
+      <div class="nosotros__grid">
+
+        <div class="nosotros__images">
+          <div class="nosotros__img nosotros__img--main img-placeholder" data-label="Foto principal — camión en ruta">
+            <!-- <img src="assets/images/nosotros-main.jpg" alt="Camión Orduña en ruta" /> -->
+          </div>
+          <div class="nosotros__img nosotros__img--accent img-placeholder" data-label="Foto secundaria — equipo / patio">
+            <!-- <img src="assets/images/nosotros-accent.jpg" alt="Equipo Orduña" /> -->
+          </div>
+        </div>
+
+        <div class="nosotros__text">
+          <span class="section-label">— Quiénes somos</span>
+          <h2 class="section-title">Experiencia que<br />mueve negocios</h2>
+          <p>
+            Orduña Transportes nació del esfuerzo familiar con un solo objetivo: 
+            llevar la carga de nuestros clientes a cualquier destino con la misma 
+            dedicación del primer día.
+          </p>
+          <p>
+            Contamos con una flota propia en constante renovación, operadores 
+            certificados y procesos que garantizan la seguridad e integridad 
+            de cada embarque.
+          </p>
+          <div class="nosotros__stats">
+            <div class="stat">
+              <span class="stat__num">10+</span>
+              <span class="stat__label">Años de experiencia</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">500+</span>
+              <span class="stat__label">Clientes atendidos</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">24/7</span>
+              <span class="stat__label">Disponibilidad</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SERVICIOS
+  ═══════════════════════════════════════════ -->
+  <section class="servicios" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">— Lo que hacemos</span>
+        <h2 class="section-title">Nuestros servicios</h2>
+      </div>
+
+      <div class="servicios__grid">
+
+        <article class="servicio-card">
+          <div class="servicio-card__img img-placeholder" data-label="Foto — carga general">
+            <!-- <img src="assets/images/servicio-carga.jpg" alt="Carga general" /> -->
+          </div>
+          <div class="servicio-card__body">
+            <span class="servicio-card__num">01</span>
+            <h3>Carga General</h3>
+            <p>Transportamos mercancía de todo tipo en camiones cerrados o de caja seca, asegurando la integridad del producto desde el origen hasta el destino.</p>
+          </div>
+        </article>
+
+        <article class="servicio-card">
+          <div class="servicio-card__img img-placeholder" data-label="Foto — flete de plataforma">
+            <!-- <img src="assets/images/servicio-flete.jpg" alt="Flete" /> -->
+          </div>
+          <div class="servicio-card__body">
+            <span class="servicio-card__num">02</span>
+            <h3>Flete Dedicado</h3>
+            <p>Servicio de camión completo (FTL) exclusivo para tu embarque. Ruta directa, sin transbordos, con seguimiento en tiempo real.</p>
+          </div>
+        </article>
+
+        <article class="servicio-card">
+          <div class="servicio-card__img img-placeholder" data-label="Foto — distribución / almacén">
+            <!-- <img src="assets/images/servicio-dist.jpg" alt="Distribución" /> -->
+          </div>
+          <div class="servicio-card__body">
+            <span class="servicio-card__num">03</span>
+            <h3>Carga Consolidada</h3>
+            <p>Compartimos el espacio del camión entre varios clientes. La solución más económica para embarques que no requieren camión completo (LTL).</p>
+          </div>
+        </article>
+
+        <article class="servicio-card">
+          <div class="servicio-card__img img-placeholder" data-label="Foto — maniobras / carga pesada">
+            <!-- <img src="assets/images/servicio-maniobras.jpg" alt="Maniobras" /> -->
+          </div>
+          <div class="servicio-card__body">
+            <span class="servicio-card__num">04</span>
+            <h3>Maniobras de Carga</h3>
+            <p>Servicio de carga y descarga con operadores capacitados y equipo adecuado para manejar tu mercancía con el máximo cuidado.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       GALERÍA
+  ═══════════════════════════════════════════ -->
+  <section class="galeria" id="galeria">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">— Nuestra flota y operaciones</span>
+        <h2 class="section-title">Galería</h2>
+      </div>
+    </div>
+
+    <div class="galeria__grid">
+      <!-- Sustituye cada div.img-placeholder por un <img> cuando tengas las fotos -->
+      <div class="galeria__item galeria__item--wide img-placeholder" data-label="Foto galería 1 — panorámica flota"></div>
+      <div class="galeria__item img-placeholder" data-label="Foto galería 2"></div>
+      <div class="galeria__item img-placeholder" data-label="Foto galería 3"></div>
+      <div class="galeria__item img-placeholder" data-label="Foto galería 4"></div>
+      <div class="galeria__item img-placeholder" data-label="Foto galería 5"></div>
+      <div class="galeria__item galeria__item--tall img-placeholder" data-label="Foto galería 6 — vertical"></div>
+      <div class="galeria__item img-placeholder" data-label="Foto galería 7"></div>
+      <div class="galeria__item img-placeholder" data-label="Foto galería 8"></div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox__close" id="lightboxClose" aria-label="Cerrar">✕</button>
+      <button class="lightbox__prev" id="lightboxPrev" aria-label="Anterior">&#8592;</button>
+      <button class="lightbox__next" id="lightboxNext" aria-label="Siguiente">&#8594;</button>
+      <div class="lightbox__img-wrap" id="lightboxImgWrap"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACTO / FOOTER
+  ═══════════════════════════════════════════ -->
+  <section class="contacto" id="contacto">
+    <div class="container">
+      <div class="contacto__grid">
+        <div class="contacto__text">
+          <span class="section-label">— Hablemos</span>
+          <h2 class="section-title">¿Necesitas<br />mover carga?</h2>
+          <p>Cuéntanos tu ruta y tipo de mercancía. Te respondemos con una cotización en menos de 24 horas.</p>
+          <ul class="contacto__info">
+            <li>📞 <a href="tel:+521234567890">+52 (123) 456-7890</a></li>
+            <li>✉️ <a href="mailto:contacto@orduna.com">contacto@orduna.com</a></li>
+            <li>📍 Manzanillo, Colima — México</li>
+          </ul>
+        </div>
+        <form class="contacto__form" id="contactForm">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tu@empresa.com" required />
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+52 (000) 000-0000" />
+          </div>
+          <div class="form-group form-group--full">
+            <label for="mensaje">Descripción de la carga</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Origen, destino, tipo de mercancía, peso aproximado..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Enviar solicitud</button>
+          <p class="form-note">Te responderemos en menos de 24 h.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__logo">ORDUÑA <span>TRANSPORTES</span></p>
+      <p class="footer__copy">© 2025 Orduña Transportes. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
