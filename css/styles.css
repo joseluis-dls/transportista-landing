@@ -243,10 +243,39 @@ ul  { list-style: none; }
   align-items: center;
   padding-top: var(--nav-h);
   overflow: hidden;
-  background: var(--clr-surface);
+  background: #ffffff;
 }
 
+.hero img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%);
+  mask-image: linear-gradient(to right, transparent 0%, black 30%);
+}
+
+/* .hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to right,
+    #ffffff 30%,
+    rgba(255,255,255,.95) 42%,
+    rgba(255,255,255,.5) 52%,
+    transparent 65%
+  );
+
+}*/
+
 .hero__content {
+  position: relative;
+  z-index: 2;
   padding: clamp(3rem, 8vw, 6rem) clamp(1.25rem, 5vw, 3rem);
   animation: fadeUp .8s ease both;
 }
@@ -315,10 +344,14 @@ ul  { list-style: none; }
 .hero__visual::before {
   content: '';
   position: absolute;
-  left: 0; top: 10%; bottom: 10%;
-  width: 3px;
-  background: var(--clr-accent);
+  inset: 0;
   z-index: 2;
+  background: linear-gradient(
+    to left,
+    transparent 50%,
+    rgba(255,255,255,.6) 80%,
+    #ffffff 100%
+  );
 }
 /* Badge flotante */
 .hero__badge {
@@ -659,22 +692,21 @@ ul  { list-style: none; }
 
 /* ── FOOTER ─────────────────────────────────────────────── */
 .footer {
-  background: var(--clr-dark);
+  background: #f0f0f0;
   padding-block: 2.5rem;
   text-align: center;
 }
+
 .footer__logo {
-  font-family: var(--ff-display);
-  font-size: 1rem;
-  font-weight: 800;
-  letter-spacing: .05em;
-  color: #fff;
-  margin-bottom: .5rem;
+  height: 105px;
+  width: auto;
+  margin: 0 auto .75rem;
+  display: block;
 }
-.footer__logo span { color: var(--clr-accent); }
+
 .footer__copy {
   font-size: .78rem;
-  color: rgba(255,255,255,.35);
+  color: var(--clr-text-muted);
 }
 
 /* ── ANIMACIONES ────────────────────────────────────────── */
