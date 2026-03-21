@@ -51,7 +51,7 @@ ul  { list-style: none; }
   letter-spacing: .18em;
   text-transform: uppercase;
   color: var(--clr-accent);
-  margin-bottom: 1rem;
+  margin-bottom: .1rem;
 }
 .section-label::before {
   content: '';
@@ -324,6 +324,7 @@ ul  { list-style: none; }
   margin-bottom: 1.25rem;
   font-size: 1.05rem;
   line-height: 1.75;
+  text-align: justify;
 }
 .nosotros__stats {
   display: flex;
@@ -331,6 +332,13 @@ ul  { list-style: none; }
   margin-top: 2.5rem;
   padding-top: 2rem;
   border-top: 1px solid var(--clr-border);
+  justify-content: center;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .stat__num {
   display: block;
@@ -371,8 +379,8 @@ ul  { list-style: none; }
   box-shadow: var(--shadow-lg);
   transform: translateY(-4px);
 }
-.servicio-card__img { height: 210px; }
-.servicio-card__body { padding: 1.75rem 2rem 2rem; }
+.servicio-card__img { height: 280px; }
+.servicio-card__body { padding: 1rem 1.25rem 1.25rem; }
 .servicio-card__num {
   display: block;
   font-size: .7rem;
@@ -475,11 +483,42 @@ ul  { list-style: none; }
   padding-block: clamp(5rem, 10vw, 9rem);
   background: var(--clr-surface);
 }
+.contacto__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: .65rem;
+  font-size: .85rem;
+  color: #aaa;
+}
+
+.contacto__info li {
+  color: #aaa;
+}
+
+.contacto__info a {
+  color: #aaa;
+  transition: color .2s;
+}
+.contacto__info a:hover { color: var(--clr-dark); }
 .contacto__grid {
-  display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: clamp(3rem, 7vw, 6rem);
-  align-items: start;
+  display: flex;
+  justify-content: center;
+}
+.contacto__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+  gap: 1.5rem;
+}
+.contacto__desc {
+  font-size: 1.05rem;
+  color: var(--clr-text-muted);
+  line-height: 1.75;
 }
 .contacto__text p {
   color: var(--clr-text-muted);
@@ -490,16 +529,32 @@ ul  { list-style: none; }
 .contacto__info {
   display: flex;
   flex-direction: column;
-  gap: .85rem;
-  font-size: .95rem;
+  gap: .65rem;
+  font-size: .85rem;
+  color: #aaa;
 }
 .contacto__info li {
   display: flex;
   align-items: center;
-  gap: .6rem;
+  gap: .4rem;
+  color: #aaa;
 }
-.contacto__info a { color: var(--clr-accent); transition: color .2s; }
+.contacto__info a {
+  color: #aaa;
+  transition: color .2s;
+}
 .contacto__info a:hover { color: var(--clr-dark); }
+.contacto__mapa {
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 220px;
+}
+.contacto__mapa iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 .contacto__form {
   background: var(--clr-bg);
   border: 1px solid var(--clr-border);
