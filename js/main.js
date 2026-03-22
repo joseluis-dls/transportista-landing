@@ -145,3 +145,14 @@ if (contactForm) {
     // Aquí conectarás tu backend / Formspree / EmailJS
   });
 }
+
+// ── GALERÍA: expandir / contraer ─────────────────────────────
+const galeriaBtn = document.getElementById('galeriaBtn');
+const galeriaGrid = document.querySelector('.galeria__grid');
+
+galeriaBtn.addEventListener('click', () => {
+  galeriaGrid.classList.toggle('expanded');
+  galeriaBtn.textContent = galeriaGrid.classList.contains('expanded')
+    ? 'Ver menos'
+    : 'Ver todas las fotos';
+});
