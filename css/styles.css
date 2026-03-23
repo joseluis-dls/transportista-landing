@@ -333,6 +333,7 @@ ul  { list-style: none; }
   padding-top: 2rem;
   border-top: 1px solid var(--clr-border);
   justify-content: center;
+  align-items: flex-end;
 }
 .stat {
   display: flex;
@@ -341,12 +342,15 @@ ul  { list-style: none; }
   text-align: center;
 }
 .stat__num {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: var(--ff-display);
   font-size: 2.4rem;
   font-weight: 500;
   color: var(--clr-accent);
   line-height: 1;
+  height: 36px;
 }
 .stat__label {
   display: block;
