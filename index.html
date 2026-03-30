@@ -178,6 +178,50 @@
   </section>
 
   <!-- ═══════════════════════════════════════════
+       DESTINOS
+  ═══════════════════════════════════════════ -->
+  <section class="destinos" id="destinos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">— Cobertura nacional</span>
+        <h2 class="section-title">Destinos principales</h2>
+      </div>
+
+      <div class="destinos__principales">
+        <div class="destino destino--principal">
+          <span class="destino__num">01</span>
+          <span class="destino__nombre">Guadalajara</span>
+        </div>
+        <div class="destino destino--principal">
+          <span class="destino__num">02</span>
+          <span class="destino__nombre">Ciudad de México</span>
+        </div>
+        <div class="destino destino--principal">
+          <span class="destino__num">03</span>
+          <span class="destino__nombre">Monterrey</span>
+        </div>
+      </div>
+
+      <div class="destinos__inferior">
+        <ul class="destinos__secundarios">
+          <li class="destino__tag">Durango</li>
+          <li class="destino__tag">Puebla</li>
+          <li class="destino__tag">Toluca</li>
+          <li class="destino__tag">Mérida</li>
+          <li class="destino__tag">Culiacán</li>
+        </ul>
+        <div class="destinos__nacional">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          <span>Cobertura en toda<br/>la república mexicana</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
        GALERÍA
   ═══════════════════════════════════════════ -->
   <section class="galeria" id="galeria">
@@ -265,38 +309,53 @@
   ═══════════════════════════════════════════ -->
   <section class="contacto" id="contacto">
     <div class="container">
-      <div class="contacto__grid">
-        <div class="contacto__content">
-          <span class="section-label">— Hablemos</span>
-          <h2 class="section-title">¿Listo para<br />cotizar?</h2>
-          <p class="contacto__desc">Contáctanos directamente por WhatsApp. Cuéntanos tu ruta, tipo de mercancía y volumen — te respondemos a la brevedad.</p>
-          <a href="https://wa.me/523141492434?text=Hola%2C%20me%20interesa%20cotizar%20un%20servicio%20de%20transporte." class="btn btn--primary" target="_blank">
-            Cotizar por WhatsApp
-          </a>
-          <ul class="contacto__info">
-            <li>Operaciones: <a href="tel:+523141492434">314-149-2434</a></li>
-            <li>Administración: <a href="tel:+523141475090">314-147-5090</a></li>
-            <li>Email: <a href="mailto:ordunatransportes@gmail.com">ordunatransportes@gmail.com</a></li>
-          </ul>
+      <div class="contacto__content">
+        <span class="section-label">— Hablemos</span>
+        <h2 class="section-title">¿Listo para cotizar?</h2>
+        <p class="contacto__desc">Contáctanos directamente por WhatsApp. Cuéntanos tu ruta, tipo de mercancía y volumen — te respondemos a la brevedad.</p>
+        <a href="https://wa.me/523141492434?text=Hola%2C%20me%20interesa%20cotizar%20un%20servicio%20de%20transporte." class="btn btn--primary" target="_blank">
+          Cotizar por WhatsApp
+        </a>
+        <div class="contacto__info-grid">
+          <div class="contacto__info-col">
+            <span class="contacto__info-label">Operaciones</span>
+            <a href="tel:+523141492434">314-149-2434</a>
+            <a href="mailto:operaciones@ordunatransportes.com">operaciones@ordunatransportes.com</a>
+          </div>
+          <div class="contacto__info-col">
+            <span class="contacto__info-label">Administración</span>
+            <a href="tel:+523141475090">314-147-5090</a>
+            <a href="mailto:admon@ordunatransportes.com">admon@ordunatransportes.com</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container">
-      <img src="assets/images/logoFull.png" alt="Orduña Transportes" class="footer__logo" />
-      <div class="footer__contacto">
-        <span>Tel. Op. 314-149-2434 &nbsp;|&nbsp; Tel. Admin. 314-147-5090</span>
-        <span>ordunatransportes@gmail.com</span>
+<footer class="footer">
+  <div class="container">
+    <img src="assets/images/logoFull.png" alt="Orduña Transportes" class="footer__logo" />
+    <div class="footer__contacto">
+      <div class="footer__contacto-row">
+        <span>Tel. Op. 314-149-2434</span>
+        <span class="footer__sep">|</span>
+        <span>Tel. Admin. 314-147-5090</span>
+      </div>
+      <div class="footer__contacto-row">
+        <span>operaciones@ordunatransportes.com</span>
+        <span class="footer__sep">|</span>
+        <span>admon@ordunatransportes.com</span>
+      </div>
+      <div class="footer__contacto-row">
         <span>Blvd. Miguel de la Madrid 502, Manzanillo, Colima</span>
       </div>
-      <div class="footer__mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d942.6284264027471!2d-104.2927598!3d19.085107!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8424d5f1293d36b1%3A0xc2a0afbc2a8ba56c!2sBlvd.%20Miguel%20de%20la%20Madrid%20502%2C%20Oc%C3%A9ano%2C%2028219%20Manzanillo%2C%20Col.!5e0!3m2!1ses-419!2smx!4v1773961965582!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <p class="footer__copy">© 2026 Orduña Transportes S.A.S. de C.V. — Todos los derechos reservados.</p>
     </div>
-  </footer>
+    <div class="footer__mapa">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d942.6284264027471!2d-104.2927598!3d19.085107!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8424d5f1293d36b1%3A0xc2a0afbc2a8ba56c!2sBlvd.%20Miguel%20de%20la%20Madrid%20502%2C%20Oc%C3%A9ano%2C%2028219%20Manzanillo%2C%20Col.!5e0!3m2!1ses-419!2smx!4v1773961965582!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <p class="footer__copy">© 2026 Orduña Transportes S.A.S. de C.V. — Todos los derechos reservados.</p>
+  </div>
+</footer>
 
   <script src="js/main.js"></script>
 </body>
