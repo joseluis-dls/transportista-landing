@@ -783,6 +783,7 @@ ul  { list-style: none; }
   .galeria__item--wide { grid-column: span 1; }
 
   .contacto__form { grid-template-columns: 1fr; padding: 1.25rem; }
+  .contacto__info-grid { grid-template-columns: 1fr;}
 
   .lightbox__prev { left: .75rem; }
   .lightbox__next { right: .75rem; }
